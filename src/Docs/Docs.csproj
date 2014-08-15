@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19ADDEEC-EAF9-4B42-8EEC-86CD389D834F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Docs</RootNamespace>
+    <AssemblyName>Docs</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ServiceStack, Version=4.0.31.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\ServiceStack.4.0.31\lib\net40\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Client, Version=4.0.31.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\ServiceStack.Client.4.0.31\lib\net40\ServiceStack.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=4.0.31.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\ServiceStack.Common.4.0.31\lib\net40\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\ServiceStack.Interfaces.4.0.31\lib\portable-wp80+sl5+net40+win8+monotouch+monoandroid\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.0.31.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\ServiceStack.Text.4.0.31\lib\net40\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout.shtml" />
+    <Content Include="css\default.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="Global.asax" />
+    <Content Include="default.htm" />
+    <Content Include="img\arr-2.gif" />
+    <Content Include="img\boat.jpg" />
+    <Content Include="img\date.png" />
+    <Content Include="img\favicon.bmp" />
+    <Content Include="favicon.ico" />
+    <Content Include="img\field.gif" />
+    <Content Include="img\has_dropdown-hover.png" />
+    <Content Include="img\ico-rss-2.png" />
+    <Content Include="img\ico-rss.png" />
+    <Content Include="img\main-bg.jpg" />
+    <Content Include="img\main-bot.jpg" />
+    <Content Include="img\main-top.jpg" />
+    <Content Include="img\meta-bg.gif" />
+    <Content Include="img\meta-bot.gif" />
+    <Content Include="img\meta-comments-num.gif" />
+    <Content Include="img\meta-top.gif" />
+    <Content Include="img\nav-dd-arr.gif" />
+    <Content Include="img\post-bg.gif" />
+    <Content Include="img\searchform-field.gif" />
+    <Content Include="img\sidebar-list-arr.gif" />
+    <Content Include="img\textarea.gif" />
+    <Content Include="img\widgettitle.jpg" />
+    <Content Include="js\fn.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="contrib\servicestack-contrib.md" />
+    <Content Include="examples\servicestack-examples.md" />
+    <Content Include="framework\accessing-ihttprequest.md" />
+    <Content Include="framework\caching-options.md" />
+    <Content Include="framework\history-of-webservices.md" />
+    <Content Include="framework\csv-format.md" />
+    <Content Include="framework\home.md" />
+    <Content Include="framework\json-report-format.md" />
+    <Content Include="framework\nuget.md" />
+    <Content Include="framework\overview.md" />
+    <Content Include="framework\release-notes.md" />
+    <Content Include="logging\logging-overview.md" />
+    <Content Include="markdown\about.md" />
+    <Content Include="markdown\markdown-razor.md" />
+    <Content Include="markdown\markdown-features.md" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="ormlite\ormlite-overview.md" />
+    <Content Include="packages.config" />
+    <Content Include="Pages.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\PublishProfiles\WebDeploy.pubxml" />
+    <Content Include="redis-admin-ui\redis-admin-ui-overview.md" />
+    <Content Include="redis-client\designing-nosql-database.md" />
+    <Content Include="redis-client\distributed-locking-with-redis.md" />
+    <Content Include="redis-client\iredisclient-api.md" />
+    <Content Include="redis-client\iredisnativeclient-api.md" />
+    <Content Include="redis-client\iredistransaction-api.md" />
+    <Content Include="redis-client\iredistypedclient-api.md" />
+    <Content Include="redis-client\redis-client.md" />
+    <Content Include="redis-client\redis-overview.md" />
+    <Content Include="redis-client\redis-pubsub.md" />
+    <Content Include="redis-client\redis-release-notes.md" />
+    <Content Include="redis-client\redis-transactions.md" />
+    <Content Include="redis-client\schemaless-nosql-migrations.md" />
+    <Content Include="redis-client\useful-redis-links.md" />
+    <Content Include="text-serializers\json-csv-jsv-serializers.md" />
+    <Content Include="text-serializers\json-serializer.md" />
+    <Content Include="text-serializers\jsv-format.md" />
+    <Content Include="text-serializers\override-mvc-jsonresult.md" />
+    <Content Include="Views\Category.md" />
+    <Content Include="Views\Search.md" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Docs.Logic\Docs.Logic.csproj">
+      <Project>{2a606eb5-47bd-47b1-97eb-8c208df63abf}</Project>
+      <Name>Docs.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5416</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/docs</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
