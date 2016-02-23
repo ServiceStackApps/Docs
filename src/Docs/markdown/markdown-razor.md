@@ -87,12 +87,12 @@ Unit tests. For reference most features of Mardown Razor view engine are capture
 
 The following basic page: 
 
-![Hello World Output](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_0E9E3527.png)
+![Hello World Output](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_0E9E3527.png)
 
 
 Can be generated in MVC Razor with:
 
-![Hello World MVC Razor](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_3276E6B4.png)
+![Hello World MVC Razor](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_3276E6B4.png)
 
 
 And Markdown Razor with:
@@ -107,12 +107,12 @@ And Markdown Razor with:
 
 The simple loop example:
 
-![Simple Loop Output](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_155D5078.png)
+![Simple Loop Output](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_155D5078.png)
 
 
 With MVC Razor:
 
-![Simple Loop MVC Razor](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_39360205.png)
+![Simple Loop MVC Razor](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_39360205.png)
 
 
 With Markdown Razor:
@@ -143,7 +143,7 @@ Which makes the Markdown Razor's version a bit more wrist-friendly then its MVCs
 ### If-Blocks and Multi-line Statements
 
 #### If statements in MVC Razor:
-![If Statements](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_4C76B8A4.png)
+![If Statements](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_4C76B8A4.png)
 
 #### If statements in Markdown Razor:
 
@@ -154,7 +154,7 @@ Which makes the Markdown Razor's version a bit more wrist-friendly then its MVCs
     }
 
 #### Multi-line and Multi-token statements
-![MVC Razor Multi-line statements](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_4B321FC5.png)
+![MVC Razor Multi-line statements](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_4B321FC5.png)
 
 Markdown Razor doesn't support multi-line or multi-token statements, instead you are directed to
 take advantage for variable syntax declarations, e.g:
@@ -172,7 +172,7 @@ take advantage for variable syntax declarations, e.g:
 Does it break with email addresses and other usages of @ in HTML?
 
 #### With MVC Razor
-![MVC Razor Content and Code](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_22B33DB1.png)
+![MVC Razor Content and Code](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_22B33DB1.png)
 
 #### With Markdown Razor
 
@@ -180,13 +180,13 @@ Does it break with email addresses and other usages of @ in HTML?
 
 Both View engines generate the expected output, e.g:
 
-![MVC Razor Content and Code Output](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_20963EE8.png)
+![MVC Razor Content and Code Output](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_20963EE8.png)
 
 
 ### Identifying Nested Content
 
 #### With MVC Razor
-![MVC Razor Identifying Nested Content](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_4A2A0A1B.png)
+![MVC Razor Identifying Nested Content](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_4A2A0A1B.png)
 
 #### With Markdown Razor
 
@@ -232,7 +232,7 @@ website templates (we believe for the better :).
 ### Simple Layout Example
 
 #### MVC Razor's example of a simple website template
-![MVC Razor simple website template](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_55CF2B80.png)
+![MVC Razor simple website template](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_55CF2B80.png)
 
 Rather then using a magic method like `@@RenderBody()` we treat the output Body of View as just 
 another variable storing the output a in a variable called **'Body'**. This way we use the
@@ -269,7 +269,7 @@ need more granularity in selecting website templates than we provide similar opt
 selecting a custom template:
 
 #### Select Custom Template with MVC Razor
-![MVC Razor Custom Layout Page](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_3B228F67.png)
+![MVC Razor Custom Layout Page](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_3B228F67.png)
 
 #### With Markdown Razor
 
@@ -293,10 +293,10 @@ MVC Razor allows you to define **sections** in your view pages which you can emb
 Master Template:
 
 #### With MVC Razor:
-![MVC Razor Sections in Views](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_448B2810.png)
+![MVC Razor Sections in Views](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_448B2810.png)
 
 And you use in your website template like so:
-![MVC Razor use Sections](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_6D0A0A24.png)
+![MVC Razor use Sections](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_6D0A0A24.png)
 
 #### With Markdown Razor:
 Markdown Razor supports the same **@@section** construct but allows you to embed it in your template
@@ -360,7 +360,7 @@ different ways to componentized and re-use code with HTMLHelper extension method
 ### Code Based HTML Helpers
 
 #### HtmlHelper extension methods with MVC Razor:
-![MVC Razor HtmlHelper extension methods](https://mscblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_150C9377.png)
+![MVC Razor HtmlHelper extension methods](https://aspblogs.blob.core.windows.net/media/scottgu/Media/image_thumb_150C9377.png)
 
 Since we've ported MVC's HtmlHelper and its **Label**, **TextBox** extensions we can do something
 similar although to make this work we need to inherit from the **MarkdownViewBase&lt;TModel&gt;**
